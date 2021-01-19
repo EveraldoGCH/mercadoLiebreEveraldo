@@ -1,0 +1,296 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    margin: 20px 0px;
+    width: 40px;
+    height: 40px;
+    background-color: #0044AA;
+    color: #FFF;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+div.burger-menu i:hover{
+    cursor: pointer;
+    background-color: #0022AA;
+}
+
+nav{
+display: none;
+}
+
+p{
+    font-size: 12px;
+}
+
+h3{
+    font-size: 24px;
+}
+header{
+    background-color: #EAC926;
+    width: 100vw;
+}
+
+header img{
+    display: inline;
+    width: 50%;
+    height: auto;
+}
+header form{
+    width: 50%;
+    height: auto;
+    display: inline;
+}
+header button{
+    display: inline;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: rgb(54, 39, 39);
+}
+.barrabuscadora{
+    width: 50%;
+}
+.textocuotas{
+    text-align: center;
+}
+
+.price{
+    font-size: 18px;
+    display: inline-block;
+    width: 30%;
+}
+
+.discount,
+.description{
+    font-size: 18px;
+    font-weight: normal;
+    display: flex;
+    width: 68%;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+section.banner img{
+    width: 100%;
+    display: block;
+}
+
+main{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 6px;
+    justify-content: center;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+main section article{
+    background-color: #fff;
+    margin: 15px;
+    padding: 10px;
+    width: 98vw;
+    box-shadow: 2px 2px 5px #999;
+}
+main section article p{
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+main section article img{
+    border-bottom: 2px solid #ebebeb;
+    display: block;
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+    display: inline-block;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    margin: 15px -10px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    right: 12%;
+    
+}
+
+footer{
+    background-color: #fff;
+    color: #666;
+    padding: 20px 5%;
+    width: 100vw;
+}
+
+footer article{
+    margin: 20px 0px;
+}
+
+footer i{
+    color: #1259c3;
+}
+
+/* propio de los formularios */
+
+.login input,
+.register input{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.login input[type='submit'],
+.register input[type='submit']{
+    color: #FFF;
+    background-color: #0044AA;  
+    border-radius: 5px;
+}
+
+.login input[type='submit']:hover,
+.register input[type='submit']:hover{
+    background-color: #0022AA;
+}
+
+
+.register input[type='reset']{
+    color: #FFF;
+    background-color: #AA0044;
+}
+
+.register input[type='reset']:hover{
+    background-color: #CC1155;
+}
+@media(min-width:460px){
+nav{
+    display: flex;
+}
+header img{
+    width: 50vw;
+}
+.barrabuscadora{
+    width: 48vw;
+}
+header p{
+display:inline;
+}
+header div.burger-menu{
+    display: none;
+}
+main section article{
+    width: 98vw;
+}
+.textocuotas{
+    display: block;
+}
+
+}
+@media(min-width:600px){
+    .content{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    main section article{
+        width: 38vw;
+    }
+    main section article i{
+        position: relative;
+        left: 29vw;
+    }
+    main section article p{
+        padding-top: 0px;
+    }
+    .price{
+        left: 2vw;
+    }
+    .flex1header{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .padre{
+        display: flex;
+        justify-content:space-around ;
+    }
+    header img{
+        width: 32vw;
+        margin: 10px;
+    }
+
+    .barrabuscadora{
+        width: 33%;
+
+    }
+    .textocuotas{
+       width: 30%;
+    }
+    .hijo1{
+display: flex;
+margin: 30px 0px;
+    }
+    .hijo1 a{
+        margin: 0px 10px;
+    }
+    .hijo2{
+        display: flex;
+        margin: 30px 0px;
+    }
+    .hijo2 a{
+        margin: 0px 10px;
+    }
+}
+@media(min-width:900px){
+    main section article{
+        width: 18vw;
+        margin: 5px 10px;
+    }
+    main section article i{
+        left: 13vw;
+    }
+    .price{
+        position: relative;
+        left: -1vw;
+    }
+}
